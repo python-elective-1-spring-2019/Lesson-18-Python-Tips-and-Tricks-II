@@ -6,7 +6,7 @@ print('original list', money)
 
 def double_money(m):
     return m * 2
-
+"""
 double_list = []
 
 for item in money:
@@ -16,15 +16,30 @@ for item in money:
 
 print (double_list)
 
+"""
 # Version map
 
-x = tuple(map(double_money, money))
+x = list(map(double_money, money))
 print('Map version:', x)
 
-# Version map with lambda
+"""
 
-x = tuple(map(lambda x : x*2 , money))
-print('Lambda/map version:', x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Iterating over a dictionary using map and lambda
 dict_a = [{'name': 'python', 'points': 10}, {'name': 'java', 'points': 8}]
@@ -37,3 +52,6 @@ list_x = [1, 2, 3]
 list_y = [10, 20, 30]
   
 map(lambda x, y: x + y, list_x, list_y) # Output: [11, 22, 33]
+
+
+"""
