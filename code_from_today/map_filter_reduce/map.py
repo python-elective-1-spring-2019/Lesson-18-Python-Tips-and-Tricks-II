@@ -22,7 +22,6 @@ print (double_list)
 x = list(map(double_money, money))
 print('Map version:', x)
 
-"""
 
 
 
@@ -37,21 +36,3 @@ print('Map version:', x)
 
 
 
-
-
-
-
-# Iterating over a dictionary using map and lambda
-dict_a = [{'name': 'python', 'points': 10}, {'name': 'java', 'points': 8}]
-map(lambda x : x['name'], dict_a) # Output: ['python', 'java']
-map(lambda x : x['points']*10,  dict_a) # Output: [100, 80]
-map(lambda x : x['name'] == "python", dict_a) # Output: [True, False]
-
-# Multiple iterables to the map function
-list_x = [1, 2, 3]
-list_y = [10, 20, 30]
-  
-map(lambda x, y: x + y, list_x, list_y) # Output: [11, 22, 33]
-
-
-"""
