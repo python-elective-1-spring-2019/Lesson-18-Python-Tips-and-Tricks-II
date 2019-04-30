@@ -19,10 +19,38 @@ print (double_list)
 """
 # Version map
 
-x = list(map(double_money, money))
+x = tuple(map(double_money, money))
 print('Map version:', x)
 
 
+# Version map with lambda
+
+x = list(map(lambda x: x*2 , money))
+print('Map Lambda version:', x)
+
+
+
+
+
+
+
+
+
+
+"""
+# Lav en liste af a-z små bogstaver
+map() lav en ny liste med store bogstaver.
+brug lambda.
+"""
+
+import string
+
+alph = string.ascii_lowercase
+print(list(map(lambda x: x.upper(), alph)))
+
+
+
+''
 
 
 
@@ -34,5 +62,11 @@ print('Map version:', x)
 
 
 
+"""
 
 
+
+x = tuple(map(lambda x : x*2 , money))
+print('Lambda/map version:', x)
+
+"""

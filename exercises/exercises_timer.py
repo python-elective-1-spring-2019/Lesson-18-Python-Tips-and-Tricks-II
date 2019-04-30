@@ -1,6 +1,4 @@
 
-
-
 def decorator(func):
     def wrapper_decorator(*args, **kwargs):
         # Do something before
